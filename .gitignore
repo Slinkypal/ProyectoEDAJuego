@@ -1,0 +1,10 @@
+#Archivos que evitar al momento de exportar nuestro informe
+#Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+#LOgs y temporales
+*.tex
+*.log
+*.tmp
