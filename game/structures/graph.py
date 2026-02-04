@@ -7,7 +7,6 @@ class Graph:
         self.nodes.add(node)
 
     def add_edge(self, u, v, w):
-        # Guardamos como (peso, nodo1, nodo2)
         self.edges.append((w, u, v))
 
     def kruskal(self):

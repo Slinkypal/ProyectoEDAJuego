@@ -1,5 +1,6 @@
 from structures.binary_tree import BinaryTree
 
+
 class Player:
     def __init__(self, name, x, y):
         self.name = name
