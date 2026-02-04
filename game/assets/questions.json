@@ -1,7 +1,29 @@
 {
-    "EL_EJIDO": "¿El parque El Ejido está en Quito?",
-    "CASA_CULTURA": "¿La Casa de la Cultura es un centro cultural?",
-    "HOSPITAL": "¿El hospital Eugenio Espejo es público?",
-    "PATRIA": "¿La Av. Patria conecta con la EPN?",
-    "EPN": "¿La EPN es una universidad pública?"
+    "questions": [
+        "¿El parque El Ejido está en Quito?",
+        "¿La Casa de la Cultura es un centro cultural?",
+        "¿El hospital Eugenio Espejo es público?",
+        "¿La Av. Patria conecta con la EPN?",
+        "¿La EPN es una universidad pública?",
+        "¿La Mitad del Mundo está al norte de Quito?",
+        "¿Quito está ubicada en la región Sierra del Ecuador?",
+        "¿El Panecillo es un mirador turístico de Quito?",
+        "¿La Basílica del Voto Nacional está en el centro de Quito?",
+        "¿El parque La Carolina está en el norte de Quito?",
+        "¿El Teleférico de Quito sube al volcán Pichincha?",
+        "¿La Plaza Grande es el centro histórico de Quito?",
+        "¿La Iglesia de la Compañía se encuentra en Quito?",
+        "¿Quito fue declarada Patrimonio Cultural de la Humanidad?",
+        "¿El río Machángara atraviesa Quito?",
+        "¿La EPN ofrece carreras de ingeniería?",
+        "¿La EPN está ubicada en la Av. Ladrón de Guevara?",
+        "¿La EPN cuenta con la Facultad de Sistemas?",
+        "¿La EPN es una universidad pública del Ecuador?",
+        "¿La EPN tiene un campus en Quito?",
+        "¿El estadio Olímpico Atahualpa está en Quito?",
+        "¿El Museo del Agua está en Quito?",
+        "¿El Centro Histórico de Quito tiene iglesias coloniales?",
+        "¿El Metro de Quito es un sistema de transporte subterráneo?",
+        "¿Quito está a más de 2.500 metros sobre el nivel del mar?"
+    ]   
 }
