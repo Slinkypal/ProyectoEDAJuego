@@ -1,0 +1,1 @@
+"""Recursos gráficos del juego."""
