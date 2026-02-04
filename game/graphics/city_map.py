@@ -1,23 +1,37 @@
 import pyxel
 
 NODES = {
-    "EL_EJIDO": (100, 140),
-    "CASA_CULTURA": (180, 140),
-    "HOSPITAL": (180, 220),
-    "PATRIA": (210, 300),
-    "EPN": (260, 330)
+    "ELEJIDO": (40, 60),
+    "CASA_CULTURA": (90, 60),
+    "HOSPITAL": (140, 90),
+    "PATRIA": (110, 140),
+    "EPN": (170, 180),
 }
 
+EDGES = [
+    ("ELEJIDO", "CASA_CULTURA"),
+    ("CASA_CULTURA", "HOSPITAL"),
+    ("HOSPITAL", "PATRIA"),
+    ("PATRIA", "EPN"),
+    ("CASA_CULTURA", "PATRIA"),
+]
+
+
 def draw_city(camera):
-    # Calles
-    for x in range(0, 512, 64):
-        pyxel.rect(x - camera.x, 130 - camera.y, 512, 20, 13)
+    pyxel.cls(11)
 
-    # Casas
-    pyxel.rect(60 - camera.x, 80 - camera.y, 20, 20, 4)
-    pyxel.rect(140 - camera.x, 90 - camera.y, 20, 20, 4)
-    pyxel.rect(220 - camera.x, 100 - camera.y, 20, 20, 4)
+    for a, b in EDGES:
+        ax, ay = NODES[a]
+        bx, by = NODES[b]
+        pyxel.line(
+            ax - camera.x,
+            ay - camera.y,
+            bx - camera.x,
+            by - camera.y,
+            6,
+        )
 
-    # EPN
-    pyxel.rect(250 - camera.x, 320 - camera.y, 40, 30, 8)
-    pyxel.text(255 - camera.x, 330 - camera.y, "EPN", 7)
+    for name, (x, y) in NODES.items():
+        pyxel.circ(x - camera.x, y - camera.y, 4, 2)
+        pyxel.text(x - camera.x - 8, y - camera.y - 10, name[:3], 7)
+
