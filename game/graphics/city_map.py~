@@ -1,0 +1,21 @@
+NODES = {
+    "EL_EJIDO": (100, 140),
+    "CASA_CULTURA": (180, 140),
+    "HOSPITAL": (180, 220),
+    "PATRIA": (210, 300),
+    "EPN": (260, 330)
+}
+
+def draw_city(camera):
+    # Calles
+    for x in range(0, 512, 64):
+        pyxel.rect(x - camera.x, 130 - camera.y, 512, 20, 13)
+
+    # Casas
+    pyxel.rect(60 - camera.x, 80 - camera.y, 20, 20, 4)
+    pyxel.rect(140 - camera.x, 90 - camera.y, 20, 20, 4)
+    pyxel.rect(220 - camera.x, 100 - camera.y, 20, 20, 4)
+
+    # EPN
+    pyxel.rect(250 - camera.x, 320 - camera.y, 40, 30, 8)
+    pyxel.text(255 - camera.x, 330 - camera.y, "EPN", 7)

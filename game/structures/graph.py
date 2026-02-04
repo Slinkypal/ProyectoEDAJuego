@@ -1,20 +1,33 @@
-#Aqui va el grafo
-def createGraph(V, edges):
-	mat = [[0 for _ in range(V)] for _ in range(V)]
-	for it in edges:
-		u = it[0]
-		v = it[1]
-		mat[u][v] = 1
+class Graph:
+    def __init__(self):
+        self.nodes = set()
+        self.edges = []
 
-		mat[v][u] = 1
-	return mat
+    def add_node(self, node):
+        self.nodes.add(node)
 
-if __name__ == "__main__":
-	V = 3
-	edges = [[0,1],[0,2],[1,2]]
-	mat = createGraph(V,edges)
-	print("Matriz Adyacente :")
-	for i in range(V):
-		for j in range(V):
-			print(mat[i][j], end=" ")
-		print()
+    def add_edge(self, u, v, w):
+        # Guardamos como (peso, nodo1, nodo2)
+        self.edges.append((w, u, v))
+
+    def kruskal(self):
+        parent = {n: n for n in self.nodes}
+
+        def find(n):
+            if parent[n] != n:
+                parent[n] = find(parent[n])
+            return parent[n]
+
+        def union(a, b):
+            parent[find(a)] = find(b)
+
+        mst = []
+        total_cost = 0
+
+        for w, u, v in sorted(self.edges):
+            if find(u) != find(v):
+                union(u, v)
+                mst.append((u, v, w))
+                total_cost += w
+
+        return mst, total_cost
