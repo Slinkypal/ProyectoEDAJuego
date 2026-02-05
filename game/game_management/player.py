@@ -22,12 +22,12 @@ class Player:
         # Margen de seguridad para dibujar (usamos self.w para ser genéricos)
         if -self.w <= px <= 256 and -self.h <= py <= 192:
             
-            # --- CORRECCIÓN DE CENTRADO ---
-            # En lugar de restar 4 fijos, restamos la mitad del ancho/alto real
+            
+        # En lugar de restar 4 fijos, restamos la mitad del ancho/alto real
             draw_x = px - (self.w // 2)
             draw_y = py - (self.h // 2)
 
-            # Dibujamos usando las dimensiones correctas
+            # Dibujamos usando las dimensiones
             pyxel.blt(draw_x, draw_y, self.img, self.u, self.v, self.w, self.h)
 
             if is_turn:
