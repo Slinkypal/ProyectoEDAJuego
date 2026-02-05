@@ -1,0 +1,11 @@
+Jugador,Puntaje
+Jugador 1,40
+Jugador 2,0
+
+KRUSKAL - Árbol de Expansión Mínima
+Nodo A,Nodo B,Peso
+EL_EJIDO,El ARBOLITO,1
+El ARBOLITO,HOSPITAL,1
+HOSPITAL,EPN,1
+
+Costo total del recorrido,3
