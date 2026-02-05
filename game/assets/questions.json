@@ -1,7 +1,101 @@
-{
-    "EL_EJIDO": "¿El parque El Ejido está en Quito?",
-    "CASA_CULTURA": "¿La Casa de la Cultura es un centro cultural?",
-    "HOSPITAL": "¿El hospital Eugenio Espejo es público?",
-    "PATRIA": "¿La Av. Patria conecta con la EPN?",
-    "EPN": "¿La EPN es una universidad pública?"
-}
+[
+    {
+        "node": "EPN",
+        "questions": [
+            {"index": 1, "q": "La EPN fue fundada por Garcia Moreno.", "a": true},
+            {"index": 2, "q": "La EPN tiene campus en las Islas Galapalagos.", "a": false},
+            {"index": 3, "q": "La Facultad de Sistemas esta en el edificio administrativo.", "a": false}
+        ]
+    },
+    {
+        "node": "EL_EJIDO",
+        "questions": [
+            {"index": 1, "q": "El parque El Ejido es conocido por la venta de arte.", "a": true},
+            {"index": 2, "q": "Este parque marca el inicio del Centro Historico.", "a": true},
+            {"index": 3, "q": "En el Ejido se encuentra la EPN.", "a": false}
+        ]
+    },
+    {
+        "node": "El ARBOLITO",
+        "questions": [
+            {"index": 1, "q": "El Arbolito es un parque vecino a la Casa de la Cultura.", "a": true},
+            {"index": 2, "q": "Aqui se encuentra el Estadio Olimpico.", "a": false},
+	    {"index": 3, "q": "El Arbolito tenia un Estadio llamado El Arbolito", "a": true}
+        ]
+    },
+    {
+        "node": "CASA_CULTURA",
+        "questions": [
+            {"index": 1, "q": "Fue fundada por Benjamin Carrion.", "a": true},
+            {"index": 2, "q": "La Cinemateca Nacional esta aqui.", "a": true},
+            {"index": 3, "q": "Es un centro comercial.", "a": false}
+        ]
+    },
+    {
+        "node": "PUCE",
+        "questions": [
+            {"index": 1, "q": "Las siglas PUCE son por Pontificia Universidad Catolica del Ecuador.", "a": true},
+            {"index": 2, "q": "Es una universidad publica y gratuita.", "a": false},
+	    {"index": 3, "q": "De forma popular se le llama La Cato.", "a": true}
+        ]
+    },
+    {
+        "node": "ESTACION_BUS",
+        "questions": [
+            {"index": 1, "q": "Por aqui pasan buses rojos.", "a": false},
+            {"index": 2, "q": "Por aqui pasa el Corredor Occidental.", "a": true},
+            {"index": 3, "q": "El pasaje cuesta 5 dolares.", "a": false}
+        ]
+    },
+    {
+        "node": "EMBAJADA FRANCESA",
+        "questions": [
+            {"index": 1, "q": "La capital de Francia es Paris.", "a": true},
+            {"index": 2, "q": "Francia esta en America del Sur.", "a": false}
+        ]
+    },
+    {
+        "node": "MC_DONALDS",
+        "questions": [
+            {"index": 1, "q": "La Big Mac es su hamburguesa iconica.", "a": true},
+            {"index": 2, "q": "Venden Encebollado los domingos.", "a": false}
+        ]
+    },
+    {
+        "node": "KFC",
+        "questions": [
+            {"index": 1, "q": "Las siglas significan Kentucky Fried Chicken.", "a": true},
+            {"index": 2, "q": "Es comida saludable baja en grasa.", "a": false}
+        ]
+    },
+    {
+        "node": "HOSPITAL",
+        "questions": [
+            {"index": 1, "q": "El Eugenio Espejo es un hospital publico.", "a": true},
+            {"index": 2, "q": "Debes guardar silencio en esta zona.", "a": true}
+        ]
+    },
+    {
+        "node": "PATRIA",
+        "questions": [
+            {"index": 1, "q": "La Av. Patria conecta el Ejido con la U. Central.", "a": true},
+	    {"index": 2, "q": "La Av. Patria interseca con la Av.6 de diciembre.", "a": true},
+	    {"index": 3, "q": "La Av. Patria despues del puente pasa a ser la Av. Amazonas", "a": false}
+        ]
+    },
+    {
+        "node": "MURAL",
+        "questions": [
+            {"index": 1, "q": "El mural de la Patria es obra de Guayasamin.", "a": true},
+	    {"index": 2, "q": "El mural se llama Grito de Independencia.", "a": false}
+        ]
+    },
+    {
+        "node": "CEC",
+        "questions": [
+            {"index": 1, "q": "El CEC ofrece cursos de idiomas.", "a": true},
+	    {"index": 2, "q": "Aqui suele pasar el poli perro suko", "a": true},
+            {"index": 3, "q": "Significa Centro de Estudios Cientificos.", "a": false}
+        ]
+    }
+]

@@ -1,11 +1,19 @@
 Jugador,Puntaje
-Jugador 1,40
-Jugador 2,0
+Jugador 1,45
+Jugador 2,45
 
 KRUSKAL - Árbol de Expansión Mínima
 Nodo A,Nodo B,Peso
+CASA_CULTURA,PATRIA,1
+CEC,MURAL,1
+CEC,PUCE,1
 EL_EJIDO,El ARBOLITO,1
+ESTACION_BUS,CEC,1
 El ARBOLITO,HOSPITAL,1
-HOSPITAL,EPN,1
+MC_DONALDS,EMBAJADA FRANCESA,1
+MURAL,EPN,1
+PATRIA,EL_EJIDO,1
+PATRIA,MC_DONALDS,1
+HOSPITAL,ESTACION_BUS,5
 
-Costo total del recorrido,3
+Costo total del recorrido,15
