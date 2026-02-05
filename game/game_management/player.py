@@ -1,5 +1,4 @@
 import pyxel
-# Asegúrate de importar BinaryTree correctamente según tu estructura
 try:
     from binary_tree import BinaryTree
 except ImportError:
