@@ -10,8 +10,9 @@ Usamos **Pyxel** para desarrollar el videojuego, aplicando conceptos como:
 - Algoritmos de Busqueda (Krushkal)
 
 ## TODO
-- [ ] Hacer el juego
+- [x] Hacer el juego
 - [x] Elaborar el informe (El formato esta en informe nose si podrian editarlo o transformalo
 en markdown para que podamos subir en el repositorio de igual form)
 - [x] Presentación para la defensa (Se aceptan ideas)
-- [x] Investigar mas acerca de Pyxel 
+- [x] Investigar mas acerca de Pyxel
+- [ ] Presentar en proceso
